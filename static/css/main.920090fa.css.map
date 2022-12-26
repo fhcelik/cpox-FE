@@ -1,0 +1,1 @@
+{"version":3,"file":"static/css/main.920090fa.css","mappings":"AAAA,yBAIE,iBAAkB,CAClB,yBAA0B,CAC1B,sBACF","sources":["components/style.css"],"sourcesContent":["circle,\npolygon,\nrect,\ntext {\n  transition: all 1s;\n  -webkit-transition: all 1s;\n  -moz-transition: all 1s;\n}\n"],"names":[],"sourceRoot":""}
