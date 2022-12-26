@@ -14,11 +14,6 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
 ### `npm run build`
 
 Builds the app for production to the `build` folder.\
@@ -29,42 +24,43 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+### `Question`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Consider a collection of objects. Each object has a name (be creative), a type (triangle, square, circle), a hex color (web standard #RRGGBB), a size (float in the range of [5px-15px radius]), a position (x, y each in the range of [0px - 800px]).
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Create a short, single page app that runs in the browser, which:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+creates and stores a random collection of N objects, (N specified by the user), stored in a react-standard state management system,
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+display a list of these objects in the browser console,
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+shows an representation in a 600px by 600px bordered region containing the objects (scaled to fit from the 800px by 800px range) each object filled with its color, labeled with its name in 10pt text (the bordered region should act like a window, and it should clip the scaled representation - think of an air-traffic control screen),
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+and allows all objects with a certain type to be made 50% transparent by toggling one of three buttons (a button for triangles, squares and circles, all initially in a selected state) below the bordered region.
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Save and bundle this work and include instructions detailing how to run it in Chrome.
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Then, extend the project by adding a random velocity field (dx, dy as a float in the range of -5px to 5px per second) to each object and a forward and backward button below the bordered region. Animate the representation (backward or forward) in 1 second increments when the button is clicked, and stop it when the button is unclicked, or the other button is clicked.
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Save and bundle this work as a second project, and include instructions detailing how to run it in Chrome.
 
-### `npm run build` fails to minify
+# How To Run
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1. Open a terminal and navigate to the directory containing the app.
+2. Run the command "npm install" to install the necessary dependencies for the app.
+3. Run the command "npm start" to start the app.
+4. The app should now be running in your default web browser (preferably Chrome).
+5. To create and store a random collection of N objects, enter the desired number of objects in the input field provided and click the "Generate Objects" button.
+6. The list of objects will be displayed in the browser console, and the objects will be displayed in the bordered region.
+7. To toggle the transparency of objects with a certain type, click the corresponding button for triangles, squares, or circles.
+8. To animate the representation of the objects in the bordered region, click the "Forward" or "Backward" button. The animation will stop when the button is unclicked or the other button is clicked.
+
+Note: If the app is not running in Chrome, you may need to manually open the app in Chrome by navigating to the localhost address provided in the terminal.
