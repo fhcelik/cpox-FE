@@ -15,7 +15,7 @@ const ObjectView: React.FC<{
   toggleVisibility: ToggleVisibilityProp;
 }> = ({ animation, objects, toggleVisibility }) => {
   const viewBox = "0 0 800 800";
-console.log('...',animation)
+
   return (
     <div
       style={{
